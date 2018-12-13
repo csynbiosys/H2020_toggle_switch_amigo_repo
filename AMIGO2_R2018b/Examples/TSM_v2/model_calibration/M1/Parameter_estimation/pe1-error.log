@@ -1,0 +1,24 @@
+Error using cvodesg_TSF1
+Requested 25769803876x18 (3456.0GB) array exceeds maximum array size preference. Creation of arrays greater than this limit may
+take a long time and cause MATLAB to become unresponsive. See array size limit or preference panel for more information.
+
+Error in AMIGO_ivpsol (line 430)
+        [yteor, privstruct.iflag, sens,  privstruct.ivpsol.dxdt{iexp}]=feval(inputs.ivpsol.ivpmex,...
+
+Error in AMIGO_smooth_simulation (line 81)
+               [results.sim.states{iexp}
+               privstruct]=AMIGO_ivpsol(inputs,privstruct,privstruct.y_0{iexp},privstruct.par{iexp},iexp);
+
+Error in AMIGO_SModel (line 137)
+        AMIGO_smooth_simulation
+
+Error in M1_Compute_SteadyState_OverNight (line 38)
+sim = AMIGO_SModel(inputs);
+
+Error in debugging_script (line 92)
+        Y0(iexp,:) =
+        M1_Compute_SteadyState_OverNight(epcc_exps,inputs,exp_indexData,global_theta_guess,Data.exp_data{1,exp_indexData}(:,1)',Data.Initial_IPTG{1,exp_indexData},Data.Initial_aTc{1,exp_indexData});
+        
+Error in run (line 91)
+evalin('caller', strcat(script, ';'));
+ 

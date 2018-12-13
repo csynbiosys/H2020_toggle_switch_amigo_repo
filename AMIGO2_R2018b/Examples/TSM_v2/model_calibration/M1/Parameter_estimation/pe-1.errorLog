@@ -1,0 +1,20 @@
+Error using AMIGO_merge_struct (line 43)
+Unrecognized field name init_u in inputs.exps
+
+Error in AMIGO_merge_struct (line 46)
+        value=AMIGO_merge_struct(default.(default_names{j,:}),opts.(opt_names{i,:}),[parentName '.' default_names{j,:}]);
+
+Error in AMIGO_check_model (line 76)
+    inputs = AMIGO_merge_struct(inputs, input_file,'inputs');
+
+Error in AMIGO_Prep (line 55)
+[inputs,results]=AMIGO_check_model(input_file,inputs_def);%,results_def
+
+Error in fit_to_ToggleSwitch_NEW_EBC (line 137)
+    AMIGO_Prep(inputs);
+
+Error in parallel_function>make_general_channel/channel_general (line 932)
+                    F(C{:});
+
+Error in remoteParallelFunction (line 46)
+        out = parallel.internal.pool.serialize(feval(channel, channelArgs{:}));
