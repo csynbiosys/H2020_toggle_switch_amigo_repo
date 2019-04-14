@@ -1,0 +1,19 @@
+Index exceeds the number of array elements (3).
+
+Error in ess_kernel (line 637)
+Refset=sol(iii(1:first_members),:);
+
+Error in AMIGO_call_OPTsolver (line 233)
+                [res_ssm]=ess_kernel(problem,inputs.nlpsol.eSS,inputs,results,privstruct);
+
+Error in AMIGO_identifiability (line 85)
+       [results,privstruct]=AMIGO_call_OPTsolver('PE',inputs.nlpsol.nlpsolver,vtheta_guess,inputs.PEsol.vtheta_min,inputs.PEsol.vtheta_max,inputs,results,privstruct);
+
+Error in AMIGO_RIdent (line 188)
+[results,privstruct]=AMIGO_identifiability(inputs,results,privstruct);
+
+Error in M3_RIdent (line 151)
+AMIGO_RIdent(inputs)
+
+Error in run (line 91)
+evalin('caller', strcat(script, ';'));

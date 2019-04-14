@@ -1,0 +1,16 @@
+Index in position 1 exceeds array bounds.
+
+Error in AMIGO_post_report_OED (line 109)
+            fprintf(1,'\t %e',results.fit.g_corr_mat(i,j));
+
+Error in AMIGO_OED (line 279)
+     [results,privstruct]= AMIGO_post_report_OED(inputs,results,privstruct);
+
+Error in fit_to_M1_optimisedIP (line 169)
+    results = AMIGO_OED(inputs);
+
+Error in parallel_function>make_general_channel/channel_general (line 938)
+                    F(C{:});
+
+Error in remoteParallelFunction (line 46)
+        out = parallel.internal.pool.serialize(feval(channel, channelArgs{:}));
