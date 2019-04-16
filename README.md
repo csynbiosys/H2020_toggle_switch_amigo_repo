@@ -18,5 +18,5 @@ This repository contains all the code involving AMIGO used in the H2020 project 
         
 - model_selection\
     
-    Unlike model_calibration\, this folder contains all files required for examining the remaining four models (M2 .. M5) used to describe the toggle switch model. The folder structure of each of these four models is identical to the folder structure found within model_calibration\M1\
+This folder contains all files required for examining the remaining four models (M2 .. M5) used to describe the toggle switch model. The folder structure of each of these four models is identical to the folder structure found within model_calibration\M1\
 
